@@ -57,7 +57,7 @@ public class StepLoginFunctionality {
 
 		driver.findElement(By.id("eLoginNew")).sendKeys("Upender.ireddy@gmail.com");
 
-		driver.findElement(By.id("pLogin")).sendKeys("21131321");
+		driver.findElement(By.id("pLogin")).sendKeys("Naukri@2012");
 
 	}
 
