@@ -47,27 +47,34 @@ public class StepLoginFunctionality {
 	@And("^user clicks Login Button$")
 
 	public void UserClicksLoginButton() {
-		
+
 		driver.findElement(By.id("login_Layer")).click();
 
 	}
-	
 
-@When("^user enters username and password$")
-public void user_enters_username_and_password() {
-   
-}
+	@When("^user enters username and password$")
+	public void user_enters_username_and_password() {
 
-@When("^user clicks login button$")
-public void user_clicks_login_button() {
-   
-}
+		driver.findElement(By.id("eLoginNew")).sendKeys("Upender.ireddy@gmail.com");
 
-@Then("^user is logged into application succesfully$")
-public void user_is_logged_into_application_succesfully()  {
-   
-}
+		driver.findElement(By.id("pLogin")).sendKeys("21131321");
 
+	}
 
+	@When("^user clicks login button$")
+	public void user_clicks_login_button() {
+
+		driver.findElement(By.xpath("//button[@value='Login']")).click();
+	}
+
+	@Then("^user is logged into application succesfully$")
+	public void user_is_logged_into_application_succesfully() {
+
+		if (driver.findElement(By.xpath("//input[@type='text']")).isDisplayed()) {
+
+			System.out.println("Logged in sucessfully");
+		}
+
+	}
 
 }

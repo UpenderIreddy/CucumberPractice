@@ -8,4 +8,5 @@ And user is on home page
 And user clicks Login Button
 When user enters username and password
 When user clicks login button
-Then user is logged into application succesfully 
+Then user is logged into application succesfully
+ 
