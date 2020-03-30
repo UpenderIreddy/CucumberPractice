@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import junit.framework.Assert;
 
 public class StepLoginFunctionality {
@@ -49,5 +51,23 @@ public class StepLoginFunctionality {
 		driver.findElement(By.id("login_Layer")).click();
 
 	}
+	
+
+@When("^user enters username and password$")
+public void user_enters_username_and_password() {
+   
+}
+
+@When("^user clicks login button$")
+public void user_clicks_login_button() {
+   
+}
+
+@Then("^user is logged into application succesfully$")
+public void user_is_logged_into_application_succesfully()  {
+   
+}
+
+
 
 }
