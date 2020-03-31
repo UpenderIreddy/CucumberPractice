@@ -73,6 +73,8 @@ public class StepLoginFunctionality {
 		if (driver.findElement(By.xpath("//input[@type='text']")).isDisplayed()) {
 
 			System.out.println("Logged in sucessfully");
+			
+			driver.quit();
 		}
 
 	}
