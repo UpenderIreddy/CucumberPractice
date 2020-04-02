@@ -1,4 +1,4 @@
-package StepDefinitions;
+/*package StepDefinitions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -52,19 +52,20 @@ public class StepLoginFunctionality {
 
 	}
 
-	@When("^user enters username and password$")
-	public void user_enters_username_and_password() {
+	@When("^user enters <\"(.*)\"> and <\"(.*)\">$")
+	
+	public void user_enters_username_and_password(String username, String password) {
 
-		driver.findElement(By.id("eLoginNew")).sendKeys("Upender.ireddy@gmail.com");
-
-		driver.findElement(By.id("pLogin")).sendKeys("Naukri@2012");
+		driver.findElement(By.xpath("//input[@placeholder='Enter your active Email ID / Username']")).sendKeys(username);
+	
+		driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys(password);
 
 	}
 
 	@When("^user clicks login button$")
 	public void user_clicks_login_button() {
 
-		driver.findElement(By.xpath("//button[@value='Login']")).click();
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
 	}
 
 	@Then("^user is logged into application succesfully$")
@@ -73,10 +74,11 @@ public class StepLoginFunctionality {
 		if (driver.findElement(By.xpath("//input[@type='text']")).isDisplayed()) {
 
 			System.out.println("Logged in sucessfully");
-			
+
 			driver.quit();
 		}
 
 	}
 
 }
+*/
