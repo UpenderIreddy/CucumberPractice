@@ -3,93 +3,166 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "Verify Facebook singup",
+        "line": 4,
+        "name": "browser",
         "description": "",
-        "id": "fb-signup-using-datatable;verify-facebook-singup",
+        "id": "verify-tagging-functionality;browser",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7155283900,
+              "duration": 143759500,
               "status": "passed"
             },
             "line": 5,
-            "name": "browser window is Opened",
+            "name": "browser is opened",
             "match": {
-              "location": "StepDataTableFbSignup.browser_window_is_Opened()"
+              "location": "StepTagging.browser_is_opened()"
             },
             "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SmokeTest"
           },
           {
-            "result": {
-              "duration": 12476769400,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user launches Facebook URL",
-            "match": {
-              "location": "StepDataTableFbSignup.user_launches_Facebook_URL()"
-            },
-            "keyword": "When "
-          },
+            "line": 3,
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Add email adress",
+        "description": "",
+        "id": "verify-tagging-functionality;add-email-adress",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 862427300,
+              "duration": 252000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user enteres firstname and surname and mobilenumber and date and month and year",
+            "line": 21,
+            "name": "email address added",
             "match": {
-              "location": "StepDataTableFbSignup.user_enteres_firstname_and_surname_and_mobilenumber_and_date_and_month_and_year(DataTable)"
+              "location": "StepTagging.email_address_added()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "test",
-                  "test1",
-                  "01234567989",
-                  "2",
-                  "Apr",
-                  "2020"
-                ],
-                "line": 8
-              }
-            ],
-            "keyword": "And "
-          },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "add phone number",
+        "description": "",
+        "id": "verify-tagging-functionality;add-phone-number",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 159215000,
+              "duration": 251100,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user clicks singup button",
+            "line": 25,
+            "name": "phone number added",
             "match": {
-              "location": "StepDataTableFbSignup.user_clicks_singup_button()"
+              "location": "StepTagging.phone_number_added()"
             },
-            "keyword": "And "
-          },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@EndToEndTest"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Add address",
+        "description": "",
+        "id": "verify-tagging-functionality;add-address",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 903227800,
+              "duration": 282500,
               "status": "passed"
             },
-            "line": 10,
-            "name": "User gets warning message",
+            "line": 29,
+            "name": "Addredd address",
             "match": {
-              "location": "StepDataTableFbSignup.user_gets_warning_message()"
+              "location": "StepTagging.addredd_address()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 27,
+            "name": "@SmokeTest"
+          },
+          {
+            "line": 27,
+            "name": "@RegressionTest"
+          },
+          {
+            "line": 27,
+            "name": "@EndToEndTest"
+          },
+          {
+            "line": 27,
+            "name": "@SanityTest"
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Add Gender",
+        "description": "",
+        "id": "verify-tagging-functionality;add-gender",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 282500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "added gender",
+            "match": {
+              "location": "StepTagging.added_gender()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 31,
+            "name": "@SanityTest"
           }
         ]
       }
     ],
-    "name": "FB signup using Datatable",
+    "name": "Verify Tagging Functionality",
     "description": "",
-    "id": "fb-signup-using-datatable",
+    "id": "verify-tagging-functionality",
     "keyword": "Feature",
-    "uri": "C:/Upender/Cucumber/CucumberPractice/src/main/java/Features/DataTableFBsignup.feature"
+    "uri": "C:/Upender/Cucumber/CucumberPractice/src/main/java/Features/Tagging.feature"
   }
 ]

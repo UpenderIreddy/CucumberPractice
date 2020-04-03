@@ -1,6 +1,7 @@
-/*package StepDefinitions;
+package StepDefinitions;
 
 import java.util.List;
+import java.util.Map;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +13,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class StepDataTableFbSignup {
+public class StepMapsDataTableFbSingup {
 
 	WebDriver driver;
 
@@ -38,17 +39,24 @@ public class StepDataTableFbSignup {
 	@When("^user enteres firstname and surname and mobilenumber and date and month and year$")
 	public void user_enteres_firstname_and_surname_and_mobilenumber_and_date_and_month_and_year(DataTable details) {
 
-		List<List<String>> signupdata = details.raw();
+		// List<List<String>> signupdata = details.raw();
 
-		driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys(signupdata.get(0).get(0));
-		driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys(signupdata.get(0).get(1));
-		driver.findElement(By.id("u_0_r")).sendKeys(signupdata.get(0).get(2));
-		Select datesel = new Select(driver.findElement(By.id("day")));
-		datesel.selectByValue(signupdata.get(0).get(3));
-		Select monthsel = new Select(driver.findElement(By.id("month")));
-		monthsel.selectByVisibleText(signupdata.get(0).get(4));
-		Select yearsel = new Select(driver.findElement(By.id("year")));
-		yearsel.selectByValue(signupdata.get(0).get(5));
+		for (Map<String, String> signupdata : details.asMaps(String.class, String.class)) {
+
+			// Map<String,String> signupdata = (Map<String, String>)
+			// details.asMaps(String.class, String.class);
+
+			driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys(signupdata.get("firstname"));
+			driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys(signupdata.get("surname"));
+			driver.findElement(By.id("u_0_r")).sendKeys(signupdata.get("mobilenumber"));
+			Select datesel = new Select(driver.findElement(By.id("day")));
+			datesel.selectByValue(signupdata.get("date"));
+			Select monthsel = new Select(driver.findElement(By.id("month")));
+			monthsel.selectByVisibleText(signupdata.get("month"));
+			Select yearsel = new Select(driver.findElement(By.id("year")));
+			yearsel.selectByValue(signupdata.get("year"));
+
+		}
 
 	}
 
@@ -67,5 +75,5 @@ public class StepDataTableFbSignup {
 		System.out.println(driver.getTitle());
 		driver.quit();
 	}
+
 }
-*/

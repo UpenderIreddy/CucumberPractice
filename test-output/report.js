@@ -1,90 +1,155 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Upender/Cucumber/CucumberPractice/src/main/java/Features/DataTableFBsignup.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Upender/Cucumber/CucumberPractice/src/main/java/Features/Tagging.feature");
 formatter.feature({
   "line": 1,
-  "name": "FB signup using Datatable",
+  "name": "Verify Tagging Functionality",
   "description": "",
-  "id": "fb-signup-using-datatable",
+  "id": "verify-tagging-functionality",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Verify Facebook singup",
+  "line": 4,
+  "name": "browser",
   "description": "",
-  "id": "fb-signup-using-datatable;verify-facebook-singup",
+  "id": "verify-tagging-functionality;browser",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 3,
+      "name": "@RegressionTest"
+    }
+  ]
 });
 formatter.step({
   "line": 5,
-  "name": "browser window is Opened",
+  "name": "browser is opened",
   "keyword": "Given "
 });
-formatter.step({
-  "line": 6,
-  "name": "user launches Facebook URL",
-  "keyword": "When "
+formatter.match({
+  "location": "StepTagging.browser_is_opened()"
 });
-formatter.step({
-  "line": 7,
-  "name": "user enteres firstname and surname and mobilenumber and date and month and year",
-  "rows": [
+formatter.result({
+  "duration": 143759500,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 20,
+  "name": "Add email adress",
+  "description": "",
+  "id": "verify-tagging-functionality;add-email-adress",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "test",
-        "test1",
-        "01234567989",
-        "2",
-        "Apr",
-        "2020"
-      ],
-      "line": 8
+      "line": 19,
+      "name": "@RegressionTest"
     }
-  ],
-  "keyword": "And "
+  ]
 });
 formatter.step({
-  "line": 9,
-  "name": "user clicks singup button",
-  "keyword": "And "
+  "line": 21,
+  "name": "email address added",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepTagging.email_address_added()"
+});
+formatter.result({
+  "duration": 252000,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 24,
+  "name": "add phone number",
+  "description": "",
+  "id": "verify-tagging-functionality;add-phone-number",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 23,
+      "name": "@EndToEndTest"
+    }
+  ]
 });
 formatter.step({
-  "line": 10,
-  "name": "User gets warning message",
-  "keyword": "Then "
+  "line": 25,
+  "name": "phone number added",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "StepDataTableFbSignup.browser_window_is_Opened()"
+  "location": "StepTagging.phone_number_added()"
 });
 formatter.result({
-  "duration": 7155283900,
+  "duration": 251100,
   "status": "passed"
 });
+formatter.scenario({
+  "line": 28,
+  "name": "Add address",
+  "description": "",
+  "id": "verify-tagging-functionality;add-address",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 27,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 27,
+      "name": "@RegressionTest"
+    },
+    {
+      "line": 27,
+      "name": "@EndToEndTest"
+    },
+    {
+      "line": 27,
+      "name": "@SanityTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 29,
+  "name": "Addredd address",
+  "keyword": "Given "
+});
 formatter.match({
-  "location": "StepDataTableFbSignup.user_launches_Facebook_URL()"
+  "location": "StepTagging.addredd_address()"
 });
 formatter.result({
-  "duration": 12476769400,
+  "duration": 282500,
   "status": "passed"
 });
+formatter.scenario({
+  "line": 32,
+  "name": "Add Gender",
+  "description": "",
+  "id": "verify-tagging-functionality;add-gender",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 31,
+      "name": "@SanityTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 33,
+  "name": "added gender",
+  "keyword": "Given "
+});
 formatter.match({
-  "location": "StepDataTableFbSignup.user_enteres_firstname_and_surname_and_mobilenumber_and_date_and_month_and_year(DataTable)"
+  "location": "StepTagging.added_gender()"
 });
 formatter.result({
-  "duration": 862427300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDataTableFbSignup.user_clicks_singup_button()"
-});
-formatter.result({
-  "duration": 159215000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDataTableFbSignup.user_gets_warning_message()"
-});
-formatter.result({
-  "duration": 903227800,
+  "duration": 282500,
   "status": "passed"
 });
 });

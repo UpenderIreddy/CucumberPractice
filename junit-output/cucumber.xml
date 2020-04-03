@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.556923">
-<testcase classname="FB signup using Datatable" name="Verify Facebook singup" time="21.556923">
-<system-out><![CDATA[Given browser window is Opened..............................................passed
-When user launches Facebook URL.............................................passed
-And user enteres firstname and surname and mobilenumber and date and month and year.passed
-And user clicks singup button...............................................passed
-Then User gets warning message..............................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="0.144827">
+<testcase classname="Verify Tagging Functionality" name="browser" time="0.14376">
+<system-out><![CDATA[Given browser is opened.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Tagging Functionality" name="Add email adress" time="0.000252">
+<system-out><![CDATA[Given email address added...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Tagging Functionality" name="add phone number" time="0.000251">
+<system-out><![CDATA[Given phone number added....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Tagging Functionality" name="Add address" time="0.000282">
+<system-out><![CDATA[Given Addredd address.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Tagging Functionality" name="Add Gender" time="0.000282">
+<system-out><![CDATA[Given added gender..........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
