@@ -3,166 +3,90 @@
     "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "browser",
+        "before": [
+          {
+            "result": {
+              "duration": 330700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepHooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Verify Hooks",
         "description": "",
-        "id": "verify-tagging-functionality;browser",
+        "id": "use-of-hooks;verify-hooks",
+        "after": [
+          {
+            "result": {
+              "duration": 110300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepHooks.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 143759500,
+              "duration": 8708315400,
               "status": "passed"
             },
             "line": 5,
-            "name": "browser is opened",
+            "name": "brower is opened",
             "match": {
-              "location": "StepTagging.browser_is_opened()"
+              "location": "StepHooks.browser_Is_Opened()"
             },
             "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "line": 3,
-            "name": "@SmokeTest"
           },
           {
-            "line": 3,
-            "name": "@RegressionTest"
-          }
-        ]
-      },
-      {
-        "line": 20,
-        "name": "Add email adress",
-        "description": "",
-        "id": "verify-tagging-functionality;add-email-adress",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
             "result": {
-              "duration": 252000,
+              "duration": 3536987800,
               "status": "passed"
             },
-            "line": 21,
-            "name": "email address added",
+            "line": 6,
+            "name": "URL is launched",
             "match": {
-              "location": "StepTagging.email_address_added()"
+              "location": "StepHooks.URL_Is_Launched()"
             },
-            "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "line": 19,
-            "name": "@RegressionTest"
-          }
-        ]
-      },
-      {
-        "line": 24,
-        "name": "add phone number",
-        "description": "",
-        "id": "verify-tagging-functionality;add-phone-number",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 251100,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "phone number added",
-            "match": {
-              "location": "StepTagging.phone_number_added()"
-            },
-            "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "line": 23,
-            "name": "@EndToEndTest"
-          }
-        ]
-      },
-      {
-        "line": 28,
-        "name": "Add address",
-        "description": "",
-        "id": "verify-tagging-functionality;add-address",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 282500,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Addredd address",
-            "match": {
-              "location": "StepTagging.addredd_address()"
-            },
-            "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "line": 27,
-            "name": "@SmokeTest"
+            "keyword": "Then "
           },
           {
-            "line": 27,
-            "name": "@RegressionTest"
-          },
-          {
-            "line": 27,
-            "name": "@EndToEndTest"
-          },
-          {
-            "line": 27,
-            "name": "@SanityTest"
-          }
-        ]
-      },
-      {
-        "line": 32,
-        "name": "Add Gender",
-        "description": "",
-        "id": "verify-tagging-functionality;add-gender",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
             "result": {
-              "duration": 282500,
+              "duration": 333696000,
               "status": "passed"
             },
-            "line": 33,
-            "name": "added gender",
+            "line": 7,
+            "name": "search for Cheese",
             "match": {
-              "location": "StepTagging.added_gender()"
+              "location": "StepHooks.search_For_Cheese()"
             },
-            "keyword": "Given "
-          }
-        ],
-        "tags": [
+            "keyword": "Then "
+          },
           {
-            "line": 31,
-            "name": "@SanityTest"
+            "result": {
+              "duration": 112068000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "search for Gmail",
+            "match": {
+              "location": "StepHooks.search_For_Gmail()"
+            },
+            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Verify Tagging Functionality",
+    "name": "Use of Hooks",
     "description": "",
-    "id": "verify-tagging-functionality",
+    "id": "use-of-hooks",
     "keyword": "Feature",
-    "uri": "C:/Upender/Cucumber/CucumberPractice/src/main/java/Features/Tagging.feature"
+    "uri": "H:/Automation Code/CucumberPractice/src/main/java/Features/Hooks.feature"
   }
 ]

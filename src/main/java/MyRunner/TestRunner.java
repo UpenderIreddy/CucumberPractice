@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 
 //path of the feature file
-features =" C:\\Upender\\Cucumber\\CucumberPractice\\src\\main\\java\\Features\\Tagging.feature"
+features = "H:\\Automation Code\\CucumberPractice\\src\\main\\java\\Features\\Hooks.feature"
 //Path of the Step definition file
 ,glue={"StepDefinitions"}
 
@@ -27,7 +27,7 @@ features =" C:\\Upender\\Cucumber\\CucumberPractice\\src\\main\\java\\Features\\
 
 // Is used to check all the steps of the feature file implemented on the step definition file, it wont execute the code.
 ,dryRun =false
-,tags ={"~@SmokeTest , @RegressionTest"}
+//,tags ={"@RegressionTest"}
 
 )
 

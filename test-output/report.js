@@ -1,155 +1,73 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Upender/Cucumber/CucumberPractice/src/main/java/Features/Tagging.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("H:/Automation Code/CucumberPractice/src/main/java/Features/Hooks.feature");
 formatter.feature({
   "line": 1,
-  "name": "Verify Tagging Functionality",
+  "name": "Use of Hooks",
   "description": "",
-  "id": "verify-tagging-functionality",
+  "id": "use-of-hooks",
   "keyword": "Feature"
 });
+formatter.before({
+  "duration": 330700,
+  "status": "passed"
+});
 formatter.scenario({
-  "line": 4,
-  "name": "browser",
+  "line": 3,
+  "name": "Verify Hooks",
   "description": "",
-  "id": "verify-tagging-functionality;browser",
+  "id": "use-of-hooks;verify-hooks",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@SmokeTest"
-    },
-    {
-      "line": 3,
-      "name": "@RegressionTest"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "browser is opened",
+  "name": "brower is opened",
   "keyword": "Given "
-});
-formatter.match({
-  "location": "StepTagging.browser_is_opened()"
-});
-formatter.result({
-  "duration": 143759500,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 20,
-  "name": "Add email adress",
-  "description": "",
-  "id": "verify-tagging-functionality;add-email-adress",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 19,
-      "name": "@RegressionTest"
-    }
-  ]
 });
 formatter.step({
-  "line": 21,
-  "name": "email address added",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "StepTagging.email_address_added()"
-});
-formatter.result({
-  "duration": 252000,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 24,
-  "name": "add phone number",
-  "description": "",
-  "id": "verify-tagging-functionality;add-phone-number",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 23,
-      "name": "@EndToEndTest"
-    }
-  ]
+  "line": 6,
+  "name": "URL is launched",
+  "keyword": "Then "
 });
 formatter.step({
-  "line": 25,
-  "name": "phone number added",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "StepTagging.phone_number_added()"
-});
-formatter.result({
-  "duration": 251100,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 28,
-  "name": "Add address",
-  "description": "",
-  "id": "verify-tagging-functionality;add-address",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 27,
-      "name": "@SmokeTest"
-    },
-    {
-      "line": 27,
-      "name": "@RegressionTest"
-    },
-    {
-      "line": 27,
-      "name": "@EndToEndTest"
-    },
-    {
-      "line": 27,
-      "name": "@SanityTest"
-    }
-  ]
+  "line": 7,
+  "name": "search for Cheese",
+  "keyword": "Then "
 });
 formatter.step({
-  "line": 29,
-  "name": "Addredd address",
-  "keyword": "Given "
+  "line": 8,
+  "name": "search for Gmail",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "StepTagging.addredd_address()"
+  "location": "StepHooks.browser_Is_Opened()"
 });
 formatter.result({
-  "duration": 282500,
+  "duration": 8708315400,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 32,
-  "name": "Add Gender",
-  "description": "",
-  "id": "verify-tagging-functionality;add-gender",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 31,
-      "name": "@SanityTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 33,
-  "name": "added gender",
-  "keyword": "Given "
-});
 formatter.match({
-  "location": "StepTagging.added_gender()"
+  "location": "StepHooks.URL_Is_Launched()"
 });
 formatter.result({
-  "duration": 282500,
+  "duration": 3536987800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepHooks.search_For_Cheese()"
+});
+formatter.result({
+  "duration": 333696000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepHooks.search_For_Gmail()"
+});
+formatter.result({
+  "duration": 112068000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 110300,
   "status": "passed"
 });
 });
