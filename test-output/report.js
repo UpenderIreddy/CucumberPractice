@@ -1,73 +1,191 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("H:/Automation Code/CucumberPractice/src/main/java/Features/Hooks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("H:/Automation Code/CucumberPractice/src/main/java/Features/POMFacebookSingup.feature");
 formatter.feature({
   "line": 1,
-  "name": "Use of Hooks",
+  "name": "Verify Facebook signup using POM",
   "description": "",
-  "id": "use-of-hooks",
+  "id": "verify-facebook-signup-using-pom",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 330700,
-  "status": "passed"
-});
-formatter.scenario({
+formatter.scenarioOutline({
   "line": 3,
-  "name": "Verify Hooks",
+  "name": "Provide Signup details for Facebook",
   "description": "",
-  "id": "use-of-hooks;verify-hooks",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "id": "verify-facebook-signup-using-pom;provide-signup-details-for-facebook",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 5,
-  "name": "brower is opened",
+  "name": "browser window is Opened",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "URL is launched",
-  "keyword": "Then "
+  "name": "user launches Facebook URL",
+  "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "search for Cheese",
-  "keyword": "Then "
+  "name": "user enteres \"\u003cfirstname\u003e\" and \"\u003csurname\u003e\" and \"\u003cmobilenumber\u003e\" and \"\u003cdate\u003e\" and \"\u003cmonth\u003e\" and \"\u003cyear\u003e\"",
+  "keyword": "And "
 });
 formatter.step({
   "line": 8,
-  "name": "search for Gmail",
+  "name": "user clicks singup button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "User gets warning message",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 11,
+  "name": "",
+  "description": "",
+  "id": "verify-facebook-signup-using-pom;provide-signup-details-for-facebook;",
+  "rows": [
+    {
+      "cells": [
+        "firstname",
+        "",
+        "surname",
+        "",
+        "mobilenumber",
+        "",
+        "date",
+        "",
+        "month",
+        "",
+        "year"
+      ],
+      "line": 12,
+      "id": "verify-facebook-signup-using-pom;provide-signup-details-for-facebook;;1"
+    },
+    {
+      "cells": [
+        "test123",
+        "",
+        "test1",
+        "",
+        "0123456789",
+        "",
+        "2",
+        "",
+        "Apr",
+        "",
+        "2020"
+      ],
+      "line": 13,
+      "id": "verify-facebook-signup-using-pom;provide-signup-details-for-facebook;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.before({
+  "duration": 615100,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 13,
+  "name": "Provide Signup details for Facebook",
+  "description": "",
+  "id": "verify-facebook-signup-using-pom;provide-signup-details-for-facebook;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 5,
+  "name": "browser window is Opened",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "user launches Facebook URL",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "user enteres \"test123\" and \"test1\" and \"0123456789\" and \"2\" and \"Apr\" and \"2020\"",
+  "matchedColumns": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "user clicks singup button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "User gets warning message",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepHooks.browser_Is_Opened()"
+  "location": "StepPOMFacebookSignUP.browser_window_is_Opened()"
 });
 formatter.result({
-  "duration": 8708315400,
+  "duration": 8275368400,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepHooks.URL_Is_Launched()"
+  "location": "StepPOMFacebookSignUP.user_launches_Facebook_URL()"
 });
 formatter.result({
-  "duration": 3536987800,
+  "duration": 5032744100,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepHooks.search_For_Cheese()"
+  "arguments": [
+    {
+      "val": "test123",
+      "offset": 14
+    },
+    {
+      "val": "test1",
+      "offset": 28
+    },
+    {
+      "val": "0123456789",
+      "offset": 40
+    },
+    {
+      "val": "2",
+      "offset": 57
+    },
+    {
+      "val": "Apr",
+      "offset": 65
+    },
+    {
+      "val": "2020",
+      "offset": 75
+    }
+  ],
+  "location": "StepPOMFacebookSignUP.user_enteres_and_and_and_and_and(String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 333696000,
+  "duration": 4393800,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepHooks.search_For_Gmail()"
+  "location": "StepPOMFacebookSignUP.user_clicks_singup_button()"
 });
 formatter.result({
-  "duration": 112068000,
+  "duration": 491300,
   "status": "passed"
 });
-formatter.after({
-  "duration": 110300,
+formatter.match({
+  "location": "StepPOMFacebookSignUP.user_gets_warning_message()"
+});
+formatter.result({
+  "duration": 105100,
   "status": "passed"
 });
 });

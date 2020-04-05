@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 
 //path of the feature file
-features = "H:\\Automation Code\\CucumberPractice\\src\\main\\java\\Features\\Hooks.feature"
+features = "H:\\Automation Code\\CucumberPractice\\src\\main\\java\\Features\\POMFacebookSingup.feature"
 //Path of the Step definition file
 ,glue={"StepDefinitions"}
 

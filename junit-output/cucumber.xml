@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.691508">
-<testcase classname="Use of Hooks" name="Verify Hooks" time="12.691508">
-<system-out><![CDATA[Given brower is opened......................................................passed
-Then URL is launched........................................................passed
-Then search for Cheese......................................................passed
-Then search for Gmail.......................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="13.313718">
+<testcase classname="Verify Facebook signup using POM" name="Provide Signup details for Facebook" time="13.313718">
+<system-out><![CDATA[Given browser window is Opened..............................................passed
+When user launches Facebook URL.............................................passed
+And user enteres "test123" and "test1" and "0123456789" and "2" and "Apr" and "2020".passed
+And user clicks singup button...............................................passed
+Then User gets warning message..............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

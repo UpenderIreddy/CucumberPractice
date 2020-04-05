@@ -1,17 +1,23 @@
 Feature: Use of Hooks
 
-Scenario: Verify Hooks
+Background: Verify backgound
 
-Given brower is opened
+# Background is used to define series of steps that are common to all the scenarios in the feature. the steps mentioned in the backgound
+# are run before every scenario mentioned in the feature is run.
+
+Given browser is opened
+
 Then URL is launched
-Then search for Cheese
-Then search for Gmail
 
-#Scenario: Verify searching for Gmail 
-#
-#Given browser is opened
-#Then URL is launched
-#Then search for Gmail
+Scenario: Verify cheese
+
+Then search for Cheese
+
+
+Scenario: Verify searching for Gmail 
+
+
+Then search for Gmail
 
 
 

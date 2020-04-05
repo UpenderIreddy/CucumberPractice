@@ -1,4 +1,4 @@
-package StepDefinitions;
+/*package StepDefinitions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,22 +13,25 @@ import cucumber.api.java.en.Then;
 public class StepHooks {
 
 	WebDriver driver;
-	
-	//Global hooks
+
+	// Global hooks
 	@Before
-	public void setUp(){
-		
+	public void setUp() {
+
 		System.out.println("Starting the chrome browser");
-		
-	}
-	//Global hooks
-	@After
-	public void tearDown(){
-		
-		System.out.println("Closing the browser");
+
 	}
 
-	@Given("^brower is opened$")
+	// Global hooks
+	@After
+	public void tearDown() {
+
+		System.out.println("Closing the browser");
+	}
+	
+	
+
+	@Given("^browser is opened$")
 	public void browser_Is_Opened() {
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Upender\\browserdrivers\\ChromeDriver\\chromedriver.exe");
@@ -38,32 +41,30 @@ public class StepHooks {
 		driver.manage().window().maximize();
 
 	}
-	
+
 	@Then("^URL is launched$")
-	public void URL_Is_Launched(){
-		
+	public void URL_Is_Launched() {
+
 		driver.get("https://www.google.com/");
 	}
-	
+
 	@Then("^search for Cheese$")
-	public void  search_For_Cheese(){
-		
+	public void search_For_Cheese() {
+
 		driver.findElement(By.xpath("//input[@title='Search']")).sendKeys("Cheese");
 		driver.findElement(By.xpath("//input[@title='Search']")).clear();
-		
+		driver.quit();
 
-		
-		
 	}
+
 	
 	@Then("^search for Gmail$")
-	public void  search_For_Gmail(){
-		
-		
-		
+	public void search_For_Gmail() {
+
 		driver.findElement(By.xpath("//input[@title='Search']")).sendKeys("Gmail");
-		
-		
+		driver.quit();
+
 	}
-	
+
 }
+*/
