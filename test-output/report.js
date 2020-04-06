@@ -83,7 +83,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 615100,
+  "duration": 758800,
   "status": "passed"
 });
 formatter.scenario({
@@ -131,14 +131,14 @@ formatter.match({
   "location": "StepPOMFacebookSignUP.browser_window_is_Opened()"
 });
 formatter.result({
-  "duration": 8275368400,
+  "duration": 17098485500,
   "status": "passed"
 });
 formatter.match({
   "location": "StepPOMFacebookSignUP.user_launches_Facebook_URL()"
 });
 formatter.result({
-  "duration": 5032744100,
+  "duration": 6316596700,
   "status": "passed"
 });
 formatter.match({
@@ -171,21 +171,20 @@ formatter.match({
   "location": "StepPOMFacebookSignUP.user_enteres_and_and_and_and_and(String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 4393800,
-  "status": "passed"
+  "duration": 5393200,
+  "error_message": "java.lang.NullPointerException\r\n\tat UIPages.SignUpPage.typeFirstname(SignUpPage.java:91)\r\n\tat StepDefinitions.StepPOMFacebookSignUP.user_enteres_and_and_and_and_and(StepPOMFacebookSignUP.java:54)\r\n\tat ✽.And user enteres \"test123\" and \"test1\" and \"0123456789\" and \"2\" and \"Apr\" and \"2020\"(H:/Automation Code/CucumberPractice/src/main/java/Features/POMFacebookSingup.feature:7)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "StepPOMFacebookSignUP.user_clicks_singup_button()"
 });
 formatter.result({
-  "duration": 491300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepPOMFacebookSignUP.user_gets_warning_message()"
 });
 formatter.result({
-  "duration": 105100,
-  "status": "passed"
+  "status": "skipped"
 });
 });

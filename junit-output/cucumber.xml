@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="13.313718">
-<testcase classname="Verify Facebook signup using POM" name="Provide Signup details for Facebook" time="13.313718">
-<system-out><![CDATA[Given browser window is Opened..............................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="23.421234">
+<testcase classname="Verify Facebook signup using POM" name="Provide Signup details for Facebook" time="23.421234">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at UIPages.SignUpPage.typeFirstname(SignUpPage.java:91)&#13;&#10;&#9;at StepDefinitions.StepPOMFacebookSignUP.user_enteres_and_and_and_and_and(StepPOMFacebookSignUP.java:54)&#13;&#10;&#9;at ✽.And user enteres &quot;test123&quot; and &quot;test1&quot; and &quot;0123456789&quot; and &quot;2&quot; and &quot;Apr&quot; and &quot;2020&quot;(H:/Automation Code/CucumberPractice/src/main/java/Features/POMFacebookSingup.feature:7)&#13;&#10;"><![CDATA[Given browser window is Opened..............................................passed
 When user launches Facebook URL.............................................passed
-And user enteres "test123" and "test1" and "0123456789" and "2" and "Apr" and "2020".passed
-And user clicks singup button...............................................passed
-Then User gets warning message..............................................passed
-]]></system-out>
+And user enteres "test123" and "test1" and "0123456789" and "2" and "Apr" and "2020".failed
+And user clicks singup button...............................................skipped
+Then User gets warning message..............................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at UIPages.SignUpPage.typeFirstname(SignUpPage.java:91)
+	at StepDefinitions.StepPOMFacebookSignUP.user_enteres_and_and_and_and_and(StepPOMFacebookSignUP.java:54)
+	at ✽.And user enteres "test123" and "test1" and "0123456789" and "2" and "Apr" and "2020"(H:/Automation Code/CucumberPractice/src/main/java/Features/POMFacebookSingup.feature:7)
+]]></failure>
 </testcase>
 </testsuite>

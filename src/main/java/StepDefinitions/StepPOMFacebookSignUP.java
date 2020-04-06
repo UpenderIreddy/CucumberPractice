@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 
 import SharedSteps.Utilities;
+import UIPages.SignUpPage;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -45,10 +46,17 @@ public class StepPOMFacebookSignUP extends Utilities {
 	}
 
 	@When("^user enteres \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void user_enteres_and_and_and_and_and(String arg1, String arg2, String arg3, String arg4, String arg5,
-			String arg6) throws Throwable {
+	public void user_enteres_and_and_and_and_and(String firstname, String surname, String mobilenumber, String date, String month,
+			String year) throws Throwable {
 		
-		System.out.println("details");
+		SignUpPage sp = new SignUpPage(driver);
+		
+		sp.typeFirstname(firstname);
+		sp.typeSurname(surname);
+		sp.typeMobileNumber(mobilenumber);
+		sp.selectDay("2");
+		
+		
 	}
 
 	@When("^user clicks singup button$")
